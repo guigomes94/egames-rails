@@ -22,7 +22,7 @@ class OrdersController < ApplicationController
   
   def create
     
-    @order = order.new(order_params)
+    @order = Order.new(order_params)
     
     if @order.save
       
