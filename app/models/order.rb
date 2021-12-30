@@ -4,4 +4,5 @@ class Order < ApplicationRecord
     done: 1,
     cancel: 2
   }
+  validates :number, :date, :clientId, :productId, :quantity, :status, presence: true
 end
